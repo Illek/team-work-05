@@ -1,5 +1,5 @@
 import { Container, CountryList, Heading, Loader, Section } from 'components';
-import { useFetchCountries } from 'hooks';
+// import { useFetchCountries } from 'hooks';
 import { useEffect, useState } from 'react';
 import { getCountries } from 'service/countryApi';
 
@@ -23,7 +23,6 @@ const Home = () => {
     };
     fetchData();
   }, []);
-  console.log(countries);
   return (
     <Section>
       <Container>
